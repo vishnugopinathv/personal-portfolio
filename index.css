@@ -139,7 +139,8 @@ section{
         padding: 0.5rem;
     }
     .home-container{
-        height: 90vh;
+        height: 80vh;
+        padding: 0.5rem;
     }
     nav ul{
         position: absolute;
@@ -170,6 +171,7 @@ section{
     }
     #burgerbtn{
         display: inline;
+        transition: 0.4s ease-in-out;
     }
     header h1{
         padding-left: 1rem;
