@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: bisque;
+}
+.nav-btn-color{
+    color: dodgerblue;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 2rem;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: dodgerblue;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px gray;
+    padding: 1.2rem;
+    height: 100px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.profile-image{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+header h1{
+    font-size: 2.2rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 0.5rem 4rem;
+    letter-spacing: 1.5px;
+}
+.nav-heading h1 span{
+    font-size: 1.25rem;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+nav ul{
+    display: flex;
+    font-size: 1.1rem;
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-family: 'Source Code Pro', monospace;
+    user-select: none;
+}
+
+section{
+    position: absolute;
+    top: 5rem;
+    padding: 2rem;
+    opacity: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(100%) scaleX(0);
+}
+#burgerbtn{
+    position: absolute;
+    right: 2rem;
+    top: 2.5rem;
+    font-size: 1.5rem;
+    display: none;
+}
+.show-section{
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+.home-container{
+    background-color: white;
+    width: 90vw;
+    max-width: 960px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128,0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.description-container h1{
+    font-family: 'Source Code Pro',monospace;
+    font-size: 2rem;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.description-container p{
+    padding: 1rem;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.description-container{
+    margin: 1rem;
+    width: 50%;
+}
+.social-icons{
+    margin: 1rem;
+}
+.icons i{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: rgb(0, 0, 0,0.75);
+}
+.icons i:hover{
+    color: dodgerblue;
+}
+@media (max-width:865px){
+    .profile-image{
+        width: 15rem;
+        height: 15rem;
+    }
+    .description-container {
+        width: 100%;
+        margin:0;
+    }
+    .description-container h1{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    .home-container{
+        height: 90vh;
+    }
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        right: 0rem;
+        top: 6rem;
+        width: 100%;
+        height: 0;
+        background-color: white;
+        padding: 0;
+        overflow: hidden;
+        transition: 0.4s ease-in-out;
+    }
+    .shownav{
+        height: 21.5rem;
+    }
+    .burgerclick{
+        transform: rotate(90deg);
+    }
+    nav ul li{
+        padding: 2rem 1.5rem;
+        width: 100%;
+    }
+   nav ul li:hover{
+        background-color: rgb(30, 144, 255,0.25);
+        padding-left: 2.5rem;
+        transition: 0.4s ease-in-out;
+    }
+    #burgerbtn{
+        display: inline;
+    }
+    header h1{
+        padding-left: 1rem;
+    }
+    .social-icons{
+        margin: 0.25rem;
+    }
+}
+@media (max-width:520px){
+    .icons i{
+        font-size: 1.4rem;
+        padding: 0.35rem;
+    }
+    .description-container h1{
+        font-size: 1.2rem;
+    }
+    .profile-image{
+        width: 10rem;
+        height: 10rem;
+    }
+}
