@@ -118,7 +118,7 @@ section{
     margin: 1rem;
 }
 .icons i{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
     color: rgb(0, 0, 0,0.75);
 }
@@ -138,10 +138,7 @@ section{
         font-size: 1.5rem;
         padding: 0.5rem;
     }
-    .home-container{
-        height: 80vh;
-        padding: 0.5rem;
-    }
+    
     nav ul{
         position: absolute;
         flex-direction: column;
@@ -182,14 +179,18 @@ section{
 }
 @media (max-width:520px){
     .icons i{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         padding: 0.35rem;
     }
     .description-container h1{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .profile-image{
-        width: 10rem;
-        height: 10rem;
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .home-container{
+        height: 80vh;
+        padding: 0.5rem;
     }
 }
