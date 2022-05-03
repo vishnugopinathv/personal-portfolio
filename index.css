@@ -168,6 +168,7 @@ section{
     }
     #burgerbtn{
         display: inline;
+        cursor: pointer;
         transition: 0.4s ease-in-out;
     }
     header h1{
