@@ -24,6 +24,6 @@ burgerBtn.addEventListener('click',()=>{
 })
 function navToggle(){
     navBar.classList.toggle("shownav");
-    burgerBtn.classList.toggle("burgerclick");
+    burgerBtn.classList.toggle("fa-xmark");
 }
 

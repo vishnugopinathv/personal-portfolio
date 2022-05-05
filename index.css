@@ -5,26 +5,31 @@
 }
 body{
     overflow-x: hidden;
-    background:rgb(255, 198, 128);
+    background-color: rgb(255, 153, 142);
+    /* text-align: center; */
 }
 .nav-btn-color{
-    color: dodgerblue;
+    color: rgb(255, 114, 138);
 }
 nav ul li{
     list-style: none;
     padding: 0 2rem;
     letter-spacing: 1px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
 }
-nav ul li:hover{
-    color: dodgerblue;
+nav li a{
+    text-decoration: none;
+    color: aqua;
+    width: 100%;
+
+}
+nav ul li a:hover{
+    color: rgb(255, 114, 138);
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 5px gray;
+    background-color: rgb(73, 73, 125);
+    box-shadow: 1px 1px 5px rgb(10, 9, 9);
     padding: 1.2rem;
     height: 100px;
     position:fixed;
@@ -32,10 +37,11 @@ header{
     left: 0;
     right: 0;
     z-index: 10;
+    color: white;
 }
 .profile-image{
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 23rem;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
@@ -46,13 +52,6 @@ header h1{
     padding: 0.5rem 4rem;
     letter-spacing: 1.5px;
 }
-.nav-heading h1 span{
-    font-size: 1.25rem;
-    font-family: 'Open Sans',sans-serif;
-    letter-spacing: 1px;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-}
 nav ul{
     display: flex;
     font-size: 1.1rem;
@@ -61,19 +60,23 @@ nav ul{
     font-family: 'Source Code Pro', monospace;
     user-select: none;
 }
-
 section{
     position: absolute;
-    top: 5rem;
     padding: 2rem;
     opacity: 0; 
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 6rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     transition: all 0.4s ease-in-out;
     transform: translateX(100%) scaleX(0);
+}
+#home{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
 }
 #burgerbtn{
     position: absolute;
@@ -89,24 +92,24 @@ section{
 .home-container{
     background-color: white;
     width: 90vw;
-    max-width: 960px;
+    max-width: 1160px;
     padding: 2rem;
     box-shadow: 5px 5px 10px rgb(128, 128, 128,0.5);
-    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 .description-container h1{
-    font-family: 'Source Code Pro',monospace;
-    font-size: 2rem;
-    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 3.25rem;
+    padding: 1.5rem;
     border-bottom: 2px solid black;
     text-align: center;
 }
 .description-container p{
-    padding: 1rem;
-    font-family: 'Ubuntu',sans-serif;
+    padding: 1.5rem;
+    font-family: 'Fira Sans',sans-serif;
     letter-spacing: 1px;
     text-align: center;
     line-height: 1.3;
@@ -114,6 +117,9 @@ section{
 .description-container{
     margin: 1rem;
     width: 50%;
+}
+.description-container span:nth-child(1){
+    font-style: italic;
 }
 .social-icons{
     margin: 1rem;
@@ -126,25 +132,208 @@ section{
 .icons i:hover{
     color: dodgerblue;
 }
-@media (max-width:865px){
+.icons span{
+    font-size: 1.3rem;
+    font-family: 'Source Code Pro',sans-serif;
+    font-weight: 600;
+}
+.box{
+    position: relative;
+    background-color: white;
+    max-width: 800px;
+    width: 75vw;
+    margin: 3rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,0.5);
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:black;
+}
+.sub-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border: 2px solid black;
+    padding: 2rem;
+}
+.box h1{
+    font-family: 'Ubuntu',sans-serif;
+}
+#resume,#projects,#contact{
+    flex-direction: column;
+}
+section>h1{
+    font-size:4rem ;
+    font-family: "Ubuntu",sans-serif;
+    position: relative;
+    margin: 1rem;
+}
+section>h1:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 1.5rem;
+    left: -2rem;
+}
+.resume-box-heading{
+    font-size: 2rem;
+    font-family: 'Roboto',sans-serif;
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+}
+.resume-box-heading::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    left: -1rem;
+    top:0.5rem;
+}
+.education{
+    gap: 2rem;
+}
+.languages{
+    font-size: 1.2rem;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 600;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.languages li{
+    padding: 0.5rem;
+}
+
+.skills img{
+    width: 150px;
+}
+.skills{
+    gap: 3rem;
+}
+.projects-box-heading{
+    font-size: 2.5rem;
+    border-bottom: 2px solid;
+    padding: 0.5rem;
+}
+.projects-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.projects-description p{
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.button-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 228, 196,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+.box:hover .button-container{
+    opacity: 1;
+}
+.link-button{
+    padding: 0.5rem;
+    width: 6.5rem;
+    font-family: 'Oswald',monospace;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    margin: 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+.link-button:hover{
+    background-color: rgb(52, 54, 165);
+    color: bisque;
+    transition: all 0.4s ease-out;
+}
+.contact-icons{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: 'Ubuntu',sans-serif;
+   font-size: 1.2rem;;
+}
+.contact-box{
+    justify-content: space-around;
+    padding: 2rem;
+}
+.icon-cont{
+    padding: 1rem;
+    text-align: center;
+}
+.contact-form{
+    width: 50%;
+}
+.contact-form input{
+    margin:0.5rem;
+    width: 10rem;
+    height: 2rem;
+    padding: 0.75rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(128, 128, 128,0.25);
+}
+textarea{
+    margin: 1rem;
+    width: 90%;
+    background-color: rgb(128, 128, 128,0.25);
+}
+@media (max-width:925px){
     .profile-image{
         width: 15rem;
-        height: 15rem;
+        height: 16rem;
+    }
+    nav li a{
+        color: black;
+    }
+    section{
+        top: 6rem;
+    }
+    .icons span {
+        font-size: 1rem;
+    }
+    header{
+        height: 85px;
+    }
+    .image-container{
+        padding: 0.5rem;
     }
     .description-container {
         width: 100%;
-        margin:0;
+        margin: 0;
     }
     .description-container h1{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
         padding: 0.5rem;
     }
-    
     nav ul{
         position: absolute;
         flex-direction: column;
         right: 0rem;
-        top: 6rem;
+        top: 5.3rem;
         width: 100%;
         height: 0;
         background-color: white;
@@ -155,8 +344,8 @@ section{
     .shownav{
         height: 21.5rem;
     }
-    .burgerclick{
-        transform: rotate(90deg);
+    .fa-xmark:hover{
+        color: red;
     }
     nav ul li{
         padding: 2rem 1.5rem;
@@ -171,28 +360,80 @@ section{
         display: inline;
         cursor: pointer;
         transition: 0.4s ease-in-out;
+        top: 2rem;
     }
     header h1{
-        padding-left: 1rem;
+        padding: 0 1rem 1rem;
     }
     .social-icons{
         margin: 0.25rem;
     }
+    .projects-box-heading{
+        font-size: 2rem;
+    }
+    .projects-description p{
+        width: 100%;
+    }
+    .contact-form{
+        width: 75%;
+    }
 }
 @media (max-width:520px){
     .icons i{
-        font-size: 1.5rem;
-        padding: 0.35rem;
+        font-size: 1.75rem;
+        padding: 0.5rem;
+    }
+    .languages{
+        font-size: 1rem;
+    }
+    .icon-cont{
+       padding: 1rem 0;
+    }
+    .contact-box{
+        padding: 2rem 0;
+    }
+    .contact-box .social-icons{
+        padding-left: 1rem;
+    }
+    .contact-form input{
+        width: 12rem;
+    }
+    .icon-cont span{
+        font-size: 0.75rem;
+    }
+    .skills i{
+        font-size: 5rem;
+        padding: 0;
+    }
+   section>h1{
+        font-size: 3rem;
+    }
+    #home{
+        align-items: flex-start;
+        top: 6rem;
+    }
+    .icons span{
+        display: none;
     }
     .description-container h1{
-        font-size: 1.4rem;
+        font-size: 1.75rem;
+        padding: 4vh 0.5rem;
+    }
+    .description-container p{
+        font-size: 0.875rem;
+        padding:3vh 0.5rem;
     }
     .profile-image{
         width: 12.5rem;
-        height: 12.5rem;
+        height: 13.5rem;
+    }
+    .skills img{
+        width:100px ;
     }
     .home-container{
-        /* height: 70vh; */
         padding: 0.5rem;
+    }
+    .resume-box-heading{
+        font-size: 1.5rem;
     }
 }
