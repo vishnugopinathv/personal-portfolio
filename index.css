@@ -6,6 +6,8 @@
 body{
     overflow-x: hidden;
     background-color: rgb(255, 153, 142);
+    background: url("./cool-background\ \(1\).png");
+    background-attachment: fixed;
     /* text-align: center; */
 }
 .nav-btn-color{
@@ -17,10 +19,10 @@ nav ul li{
     letter-spacing: 1px;
 }
 nav li a{
+    display: block;
     text-decoration: none;
-    color: aqua;
+    color: rgb(214, 66, 66);
     width: 100%;
-
 }
 nav ul li a:hover{
     color: rgb(255, 114, 138);
@@ -28,7 +30,7 @@ nav ul li a:hover{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(73, 73, 125);
+    background-color: rgb(235, 227, 227);
     box-shadow: 1px 1px 5px rgb(10, 9, 9);
     padding: 1.2rem;
     height: 100px;
@@ -37,7 +39,7 @@ header{
     left: 0;
     right: 0;
     z-index: 10;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .profile-image{
     width: 22rem;
@@ -69,7 +71,7 @@ section{
     padding-top: 6rem;
     display: flex;
     align-items: center;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.6s ease-in-out;
     transform: translateX(100%) scaleX(0);
 }
 #home{
@@ -170,6 +172,7 @@ section>h1{
     font-family: "Ubuntu",sans-serif;
     position: relative;
     margin: 1rem;
+    padding: 0rem;
 }
 section>h1:before{
     content: "";
@@ -374,8 +377,11 @@ textarea{
     .projects-description p{
         width: 100%;
     }
+    .contact-form input{
+        width: 60%;
+    }
     .contact-form{
-        width: 75%;
+        width: 90%;
     }
 }
 @media (max-width:520px){
@@ -396,7 +402,7 @@ textarea{
         padding-left: 1rem;
     }
     .contact-form input{
-        width: 12rem;
+        width: 90%;
     }
     .icon-cont span{
         font-size: 0.75rem;
