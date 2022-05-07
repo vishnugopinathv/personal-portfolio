@@ -12,21 +12,21 @@ body{
     /* text-align: center; */
 }
 .nav-btn-color{
-    color: rgb(255, 114, 138);
+    color: rgb(214, 66, 66);
 }
 nav ul li{
     list-style: none;
-    padding: 0 2rem;
     letter-spacing: 1px;
+   
 }
 nav li a{
     display: block;
     text-decoration: none;
-    color: rgb(214, 66, 66);
-    width: 100%;
+    color: rgb(255, 114, 138);
+    padding: 0 2rem;
 }
 nav ul li a:hover{
-    color: rgb(255, 114, 138);
+    color: rgb(214, 66, 66);
 }
 header{
     display: flex;
@@ -332,7 +332,9 @@ textarea{
 .buttons{
     display: flex;
     gap: 1rem;
-
+}
+.buttons button{
+    letter-spacing: 1px;
 }
 .resume-button{
     background-color: blue;
@@ -346,7 +348,7 @@ textarea{
     position: absolute;
     font-size: 1rem;
     top: -3rem;
-    right: 1rem;
+    right: 0;
     box-sizing: border-box;
     padding: 0.25 1.5rem;
 }
@@ -358,7 +360,7 @@ textarea{
     cursor: pointer;
     font-weight: 600;
     border-radius: 10px;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 2rem;
     color: white;
     font-size: 1rem;
 }
@@ -367,6 +369,9 @@ textarea{
 }
 .resume-button i{
     font-size: 1.5rem;
+}
+.education{
+    margin-top: 5rem;
 }
 #submit:hover,.resume-button:hover{
     background-color: white;
@@ -383,6 +388,7 @@ textarea{
     }
     nav li a{
         color: black;
+        padding: 2rem 2rem;
     }
     section{
         top: 6rem;
@@ -423,12 +429,11 @@ textarea{
         color: red;
     }
     nav ul li{
-        padding: 2rem 1.5rem;
         width: 100%;
     }
-   nav ul li:hover{
+   nav ul li:hover a{
         background-color: rgb(30, 144, 255,0.25);
-        padding-left: 2.5rem;
+        padding-left: 3rem;
         transition: 0.4s ease-in-out;
     }
     #burgerbtn{
@@ -439,6 +444,9 @@ textarea{
     }
     header h1{
         padding: 0 1rem 1rem;
+    }
+    #submit{
+        margin: 1rem 3.5rem;
     }
     .social-icons{
         margin: 0.25rem;
@@ -486,9 +494,6 @@ textarea{
    section>h1{
         font-size: 3rem;
     }
-   .education{
-       margin-top: 5rem;
-   }
     #home{
         align-items: flex-start;
         top: 6rem;
@@ -516,5 +521,8 @@ textarea{
     }
     .resume-box-heading{
         font-size: 1.5rem;
+    }
+    .box .resume-button span{
+        display: none;
     }
 }
