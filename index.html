@@ -40,8 +40,14 @@
         <div class="home-container">
           <div class="image-container">
             <img src="./vishnu.jpg" class="profile-image" alt="" />
-            <!-- <h1>vishnu Gopinath</h1>
-             <p>Frontend devoloper</p> -->
+            <div class="buttons">
+              <a target="_blank" href="https://drive.google.com/file/d/1CE6sxWglsa7W1SG8t8L-8kz7OfIyZ7l7/view?usp=sharing"><button style="position:static" class="resume-button"><i class="fa-solid fa-file-arrow-down"></i><span> Resume</span></button></a>
+              <a href="#projects">
+                <button class="project-button" style="position: static;">
+                    view projects
+                </button>
+              </a>
+            </div>
           </div>
           <div class="description-container">
             <h1>
@@ -84,6 +90,7 @@
         <h1>My Resume</h1>
         <div class="education box">
           <h2 class="resume-box-heading">Education</h2>
+          <a target="_blank" href="https://drive.google.com/file/d/1CE6sxWglsa7W1SG8t8L-8kz7OfIyZ7l7/view?usp=sharing"><button class="resume-button"><i class="fa-solid fa-file-arrow-down"></i><span> Resume</span></button></a>
           <div class="sub-box">
             <div>
               <h1>B.Tech</h1>
@@ -177,11 +184,12 @@
         <h1>Contact Me</h1>
         <div class="box contact-box">
           <div class="contact-form">
-            <form action="">
-              <input type="text" placeholder="Your Name" >
-              <input type="text" placeholder="Your Email">
-              <input type="text" placeholder="Enter the Subject" >
-              <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message Here" class="meassage" ></textarea>
+            <form action="https://submit-form.com/ZH3lVsFm" method="post" id="contactform">
+              <input type="text" id="name" name="name" placeholder="Your Name" >
+              <input type="text" id="email" name="email" placeholder="Your Email">
+              <input type="text" id="subject" name="subject" placeholder="Enter the Subject" >
+              <textarea name="Message" id="message" cols="40" rows="10" name="message"  placeholder="Enter Your Message Here"></textarea>
+              <button id="submit" type="submit">Submit</button>
             </form>
           </div>
           <div class="contact-icons">
@@ -218,5 +226,7 @@
       </section>
     </div>
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
   </body>
 </html>

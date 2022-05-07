@@ -26,4 +26,13 @@ function navToggle(){
     navBar.classList.toggle("shownav");
     burgerBtn.classList.toggle("fa-xmark");
 }
-
+document.querySelector(".project-button").addEventListener('click',()=>{
+    section[2].classList.add("show-section");
+    navBtn[2].classList.add("nav-btn-color");
+    for(let j=0;j<navBtn.length;j++){
+        if(section[j].classList.contains("show-section")&&(j!==2)){
+            navBtn[j].classList.remove("nav-btn-color");
+            section[j].classList.remove("show-section");
+        }
+    }
+})
