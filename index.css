@@ -374,11 +374,11 @@ textarea{
     margin-top: 5rem;
 }
 #submit:hover,.resume-button:hover{
-    background-color: white;
+    background-color: transparent;
     color: blue;
 }
 .project-button:hover{
-    background-color: white;
+    background-color: transparent;
     color:rgb(225, 67, 93) ;
 }
 @media (max-width:925px){

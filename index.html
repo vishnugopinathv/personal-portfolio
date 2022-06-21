@@ -144,39 +144,60 @@
       </section>
       <section id="projects">
         <h1>My projects</h1>
-        <div class="digital-clock box">
-          <h1 class="projects-box-heading">Digital clock</h1>
+        <div class="box">
+          <h1 class="projects-box-heading">Netflix clone</h1>
           <div class="projects-description">
-            <img src="./digital-clock.png" width="150px" alt="" />
+            <img src="./netflix.png" width="150px" alt="" />
             <p>
-              It's a fully functioning digital clock with real time running. It has an alarm function where the image and greeting texts will change with respect to the time given.
+              a netflix clone with different pages for movies and tv shows and functionalities like mylist and Browse
             </p>
           </div>
           <div class="button-container">
-              <a target="_blank" href="https://vishnugopinathv.github.io/digital-clock/">
+              <a target="_blank" href="https://netflix-clone4.netlify.app/">
                 <button class="link-button">
                   Host url
                 </button>
               </a>
-              <a target="_blank" href="https://github.com/vishnugopinathv/digital-clock">
+              <a target="_blank" href="https://github.com/vishnugopinathv/netflix-clone">
                 <button class="link-button">
                   Repo url
                 </button>
               </a>
           </div>
         </div>
-        <div class="todo-app box">
-          <h1 class="projects-box-heading">Todo List</h1>
+        <div class="box">
+          <h1 class="projects-box-heading">Hotel Brochure</h1>
           <div class="projects-description">
-            <img src="./todo.png" width="150px" alt="" />
+            <img src="./restaurant.png" width="150px" alt="" />
             <p>
-              In this todo list you can different kinds things you wanna do and you can add sub tasks inside the main task using add button given inside each task cards.
+            A Brochure Website for showcasing the menu and details of the restaurant
             </p>
           </div>
           <div class="button-container">
-              <a target="_blank" href="https://vishnugopinathv.github.io/todo-app/"><button class="link-button">Host url</button></a>
-              <a target="_blank" href="https://github.com/vishnugopinathv/todo-app"><button class="link-button">Repo url</button></a>
+              <a target="_blank" href="https://royal-restaurant-brochure.netlify.app/"><button class="link-button">Host url</button></a>
+              <a target="_blank" href="https://github.com/vishnugopinathv/restaurant-brochure"><button class="link-button">Repo url</button></a>
         </div>
+        </div>
+        <div class="box">
+          <h1 class="projects-box-heading">Blog Project</h1>
+          <div class="projects-description">
+            <img src="./blog.png" width="250px" alt="" />
+            <p>
+              A blog page with different blogs on different categories like Hollywood,sports etc.
+            </p>
+          </div>
+          <div class="button-container">
+              <a target="_blank" href="https://thesiren-blogs.netlify.app/category/sports">
+                <button class="link-button">
+                  Host url
+                </button>
+              </a>
+              <a target="_blank" href="https://github.com/vishnugopinathv/blog-project-react">
+                <button class="link-button">
+                  Repo url
+                </button>
+              </a>
+          </div>
         </div>
         &nbsp;
       </section>
@@ -184,10 +205,10 @@
         <h1>Contact Me</h1>
         <div class="box contact-box">
           <div class="contact-form">
-            <form action="https://submit-form.com/ZH3lVsFm" method="post" id="contactform">
-              <input type="text" id="name" name="name" placeholder="Your Name" >
-              <input type="text" id="email" name="email" placeholder="Your Email">
-              <input type="text" id="subject" name="subject" placeholder="Enter the Subject" >
+            <form action="https://submit-form.com/ZH3lVsFm" method="post" data-botpoison-public-key="pk_d129c868-2539-4618-b102-373da00f3be4" id="contactform" onsubmit="submitHandler()">
+              <input type="text" id="name" name="name" placeholder="Your Name" required >
+              <input type="text" id="email" name="email" placeholder="Your Email" required>
+              <input type="text" id="subject" name="subject" placeholder="Enter the Subject" required >
               <textarea name="Message" id="message" cols="40" rows="10" name="message"  placeholder="Enter Your Message Here"></textarea>
               <button id="submit" type="submit">Submit</button>
             </form>
@@ -226,7 +247,7 @@
       </section>
     </div>
     <script src="index.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://unpkg.com/@botpoison/browser" async></script>
     </script>
   </body>
 </html>
